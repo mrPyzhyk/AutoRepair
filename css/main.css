@@ -35,6 +35,18 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   z-index: 3;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.header.fixed {
+  position: fixed;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background-color: #000;
+  opacity: .9;
 }
 
 .header__wrapper {
